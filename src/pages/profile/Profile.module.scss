@@ -1,0 +1,52 @@
+.profile {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    margin-top: 25px;
+    grid-column-gap: 25px;
+}
+.ava {
+    border-radius: 50%;
+    width: 35px;
+    max-width: 35px;
+    height: 35px;
+    max-height: 35px;
+    background-color: red;
+    margin-right: 15px;
+}
+.add {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+}
+.top {
+    display: flex;
+    align-items: center;
+    p {
+        color: #595959;
+        line-height: 30px;
+        font-size: 18px;
+    }
+}
+.buttons {
+    display: flex;
+    margin-top: 15px;
+}
+.button {
+    background-color: darken($color: #f4f7f9, $amount: 5%);
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #595959;
+    font-size: 14px;
+    border-radius: 8px;
+    &:hover {
+        background-color: darken($color: #f4f7f9, $amount: 10%)
+    }
+    &:last-child {
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,17 @@
+.menu {
+    border-bottom: 1px solid #f2f2f2;
+}
+.lists {
+    display: flex;
+    padding: 20px;
+    li {
+        margin-right: 20px;
+        a {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

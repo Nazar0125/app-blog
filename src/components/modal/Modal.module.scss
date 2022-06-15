@@ -1,0 +1,13 @@
+.close {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    &:hover {
+        svg {
+            path {
+                fill: #4d4d4d;
+            }
+        }
+    }
+}

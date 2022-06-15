@@ -1,0 +1,50 @@
+@import './../../../colors.scss';
+
+.contactsBlock {
+    background-color: $color3;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.06);
+    margin-top: 20px;
+}
+.header {
+    display: flex;
+    span {
+        color: $color7;
+    }
+}
+.title {
+    font-size: 16px;
+    margin-right: 10px;
+}
+.link {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 20px;
+    margin-top: 15px;
+}
+.photo {
+    background-color: darken($color9, 3%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:hover {
+        .site {
+            color: $color6;
+        }
+    }
+}
+.site {
+    color: $color2;
+}
+.url {
+    color: $color7;
+}

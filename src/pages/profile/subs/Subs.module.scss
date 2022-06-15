@@ -1,0 +1,50 @@
+.subs {
+    background-color: #fff;
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    &:last-child {
+        margin-top: 25px;
+    }
+}
+.title {
+    font-size: 18px;
+    font-weight: 500;
+}
+.items {
+    margin: 25px 0;
+}
+.item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin-bottom: 15px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:hover {
+        .text {
+            color: #3766a9;
+        }
+    }
+}
+.ava {
+    width: 30px;
+    max-width: 30px;
+    height: 30px;
+    max-height: 30px;
+    background-color: red;
+    border-radius: 8px;
+}
+.text {
+    margin-left: 10px;
+}
+.footer {
+    a {
+        color: #3766a9;
+        &:hover {
+            color: #e55c78;
+        }
+    }
+}

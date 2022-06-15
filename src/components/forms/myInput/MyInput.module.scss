@@ -1,0 +1,27 @@
+.input {
+    outline: none;
+    background-color: #f5f5f5;
+    border: 1px solid rgba(0,0,0,0.03);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    &:focus {
+        background-color: #fff;
+        border-color: #4683d9;
+        box-shadow: 0 0 0 3px rgba(70,131,217,0.12);
+    }
+    &:active {
+        background-color: #fff;
+        border-color: #4683d9;
+        box-shadow: 0 0 0 3px rgba(70,131,217,0.12);
+    }
+    &:hover {
+        border-color: #bdd6fa;
+        box-shadow: 0 0 0 3px rgba(70,131,217,0.12);
+        &:focus {
+            background-color: #ffffff;
+            border-color: #4683d9 !important;
+        }
+    }
+}

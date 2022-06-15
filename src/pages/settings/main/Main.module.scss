@@ -1,0 +1,8 @@
+.change {
+    margin-top: 15px;
+    cursor: pointer;
+    color: #4683d9;
+    &:hover {
+        color: darken($color: #4683d9, $amount: 20%);
+    }
+}

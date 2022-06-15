@@ -1,0 +1,47 @@
+@import './../../colors.scss';
+.create {
+    position: relative;
+}
+.block {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.06), 0 1px 2px 0 rgba(0,0,0,0.06);
+    background-color: $color3;
+    padding: 10px 15px;
+    border-radius: 10px;
+    span {
+        display: flex;
+        align-items: center;
+        margin-right: 5px;
+    }
+    &:hover {
+        box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.06), 0 2px 4px 0 rgba(0,0,0,0.08);
+        transition: all 0.1s linear;
+    }
+}
+.menu {
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06), 0 0 1px rgba(0,0,0,0.25);
+}
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(0,0,0,0.05);
+    }
+    span {
+        align-items: center;
+    }
+    .img {
+        margin-right: 10px;
+    }
+}

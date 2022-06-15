@@ -1,0 +1,43 @@
+@import './../../../colors.scss';
+
+.navigation {
+    background-color: $color3;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.06);
+    li {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        a {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+.title {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px;
+}
+.text {
+
+}
+.icon {
+    margin-right: 10px;
+}
+.blcok {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 5px 20px;
+    align-items: center;
+    &:hover {
+        background-color: lighten(#eff5fe, 1%);
+    }
+}
+.blcokActive {
+    background-color: #eff5fe;
+}
+.active {
+    background-color: #eff5fe;
+}

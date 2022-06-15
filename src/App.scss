@@ -1,0 +1,50 @@
+@import './colors';
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+.container-full {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+.main {
+    position: relative;
+    padding-top: 62px;
+}
+ 
+.lists-company {
+    background-color: $color3 !important;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+}
+.is-sticky {
+    position: fixed;
+    z-index: 999;
+    width: 300px;
+    background-color: $color3 !important;
+    border-radius: 8px;
+    top: 83px;
+    padding: 20px;
+}
+
+@media (max-width: 992px) {
+    .container {
+      max-width: 640px;
+    }
+    .container-full {
+        max-width: 920px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 640px;
+      }
+    .container-full {
+      max-width: 960px;
+    }
+}

@@ -1,0 +1,25 @@
+.wrapper {
+    background-color: #fff;
+}
+.container {
+    width: 640px;
+    max-width: 640px;
+    margin: auto;
+    padding: 40px 0;
+}
+.title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.text {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.item {
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

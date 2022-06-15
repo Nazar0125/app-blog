@@ -1,0 +1,46 @@
+.menu {
+    background-color: #fff;
+    border-radius: 8px;
+}
+.title {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 500;
+    padding: 15px;
+    padding-bottom: 5px;
+}
+.item {
+    padding: 10px 0;
+    a {
+        margin: 0 15px;
+        display: flex;
+        align-items: center;
+        color: #595959cc;
+        span {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+    }
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    &:last-child {
+        border-bottom: 0px solid rgba(0,0,0,0.1);
+    }
+    &:hover {
+        background-color: #eff5fe;
+        border-bottom: 1px solid #eff5fe;
+        cursor: pointer;
+    }
+}
+.avtive {
+    font-weight: 500;
+    background-color: darken($color: #eff5fe, $amount: 3%);
+    pointer-events: none;
+    color: #000;
+    a {
+        color: #000;
+    }
+    svg {
+        fill: #000;
+    }
+}

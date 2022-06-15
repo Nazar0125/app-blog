@@ -1,0 +1,40 @@
+.close {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    &:hover {
+        svg {
+            path {
+                fill: #4d4d4d;
+            }
+        }
+    }
+}
+.input {
+    input {
+        width: 100%;
+        max-width: 100%; 
+        font-size: 36px;
+        outline: none;
+        border: none;
+        &::placeholder {
+            color: lighten($color: #4d4d4d, $amount: 40%);
+            font-size: 36px;
+        }   
+    }
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+}
+.body {
+    margin: 20px 0;
+}
+.footer {
+    width: 200px;
+}

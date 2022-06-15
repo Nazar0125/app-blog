@@ -1,0 +1,9 @@
+.events {
+    margin-bottom: 50px;
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-column-gap: 25px;
+    margin-top: 35px;
+}

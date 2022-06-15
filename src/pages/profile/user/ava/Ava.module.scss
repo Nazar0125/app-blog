@@ -1,0 +1,73 @@
+.ava {
+    width: 90px;
+    height: 90px;
+    background-color: #e55c78;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        .add {
+            display: flex;
+        }
+    }
+}
+.add {
+    background-color: #e55c78;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    svg {
+        color: #fff;
+    }
+    &:hover {
+        svg {
+            color: darken($color: #fff, $amount: 5%)
+        }   
+    }
+}
+.input_file {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.photo {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #e55c78;
+    border-radius: 8px;
+
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+        border-radius: 8px;
+    }
+}
+.upload {
+    &_loading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+}

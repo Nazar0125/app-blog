@@ -1,0 +1,50 @@
+.subs {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 20px;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 20px 0;
+    &:last-child {
+        border-bottom: 0 solid #f2f2f2;
+    }
+}
+.ava {
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
+    max-height: 40px;
+    background-color: red;
+}
+.btn {
+    box-shadow: 0 1px 2px rgba(0,0,0,.08),
+        inset 0 0 0 1px rgba(0,0,0,.06),
+        inset 0 -1px 0 rgba(0,0,0,.12),
+        inset 1px 0 0 rgba(0,0,0,.06),
+        inset -1px 0 0 rgba(0,0,0,.06);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    svg {
+        margin-right: 5px;
+    }
+    &:hover {
+        box-shadow: 0 1px 2px rgba(0,0,0,.1),
+        inset 0 0 0 1px rgba(0,0,0,.09),
+        inset 0 -1px 0 rgba(0,0,0,.15),
+        inset 1px 0 0 rgba(0,0,0,.09),
+        inset -1px 0 0 rgba(0,0,0,.09);    
+    }
+}
+.title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.text {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}

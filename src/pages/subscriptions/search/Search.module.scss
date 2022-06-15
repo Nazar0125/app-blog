@@ -1,0 +1,24 @@
+.search {
+    border-bottom: 1px solid #f2f2f2;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.icon {
+    width: 45px;
+    max-width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block {
+    padding: 10px;
+}
+.input {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    outline: none;
+    &::placeholder {
+        font-size: 16px;
+    }
+}
