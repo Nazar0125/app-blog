@@ -5,13 +5,19 @@ import { useForm } from "react-hook-form";
 import {AuthApi} from './../../api/authApi'
 import MySubmit from '../forms/mySubmit';
 
-const Registration:React.FC = () => {
+interface typeProps {
+    registrationChenge: any,
+}
+const Registration:React.FC<typeProps> = ({registrationChenge}) => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     
     const onSubmit = async (data:any, e:any) => {
         e.preventDefault();
         try {
-            await AuthApi.registration(data);
+            let item = await AuthApi.registration(data);
+            if (item.statusCode === 200) {
+                registrationChenge()
+            }
         } catch(error) {
             console.log('error')
         }

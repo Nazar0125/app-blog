@@ -7,7 +7,7 @@ import { INDEX_ROUTE, COMPANIES_ROUTE, EVENTS_ROUTE, FRESH_ROUTE, POPULAR_ROUTE,
     DRAFTS_ROUTE, POST_ROUTE, NEW_ROUTE, SAVED_ROUTE } from '../utils/consts/consts';
 
 import More from '../pages/company/more';
-import Companies from '../pages/companies';
+import Companies from '../pages/companies/index';
 import Fresh from '../pages/fresh';
 import Popular from '../pages/popular';
 import Company from '../pages/company';
@@ -34,17 +34,17 @@ import UserPg from '../pages/user';
 export const RouterConfig = () => {
     return (
         <Routes>
-            <Route path={INDEX_ROUTE} element={<Popular />} />
-            <Route path={POPULAR_ROUTE} element={<Popular />} />
-            <Route path={COMPANIES_ROUTE} element={<Companies />} />
+            <Route path = {INDEX_ROUTE} element = {<Popular />} />
+            <Route path = {POPULAR_ROUTE} element = {<Popular />} />
+            <Route path = {COMPANIES_ROUTE} element = {<Companies />} />
 
-            <Route path={EVENTS_ROUTE} element={<Events />} />
-            <Route path={`${EVENTS_ROUTE}/:id`} element={<Webinar />} />
-            <Route path={EVENTS_ROUTE+NEW_ROUTE} element={<CreateEvents />} />
+            <Route path = {EVENTS_ROUTE} element = {<Events />} />
+            <Route path = {`${EVENTS_ROUTE}/:id`} element = {<Webinar />} />
+            <Route path = {EVENTS_ROUTE+NEW_ROUTE} element = {<CreateEvents />} />
             
-            <Route path={FRESH_ROUTE} element={<Fresh />} />
-            <Route path={COMPANY_ROUTE} element={<Company />}/>
-            <Route path={COMPANY_ROUTE+DETAILS_ROUTE} element={<Details />}/>
+            <Route path = {FRESH_ROUTE} element = {<Fresh />} />
+            <Route path = {COMPANY_ROUTE} element = {<Company />}/>
+            <Route path = {COMPANY_ROUTE+DETAILS_ROUTE} element = {<Details />}/>
             <Route path={COMPANY_ROUTE+DETAILS_ROUTE+MORE_ROUTE} element={<More />} />
             <Route path={COMPANY_ROUTE+DETAILS_ROUTE+SUBSCRIBERS_ROUTE} element={<SubscribersCompany />} />
             <Route path={COMPANY_ROUTE+DETAILS_ROUTE+CONTACTS_ROUTE} element={<SubscribersCompany />} />

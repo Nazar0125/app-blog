@@ -24,8 +24,8 @@ const Companies:React.FC = () => {
                 <div className={styles.body}>
                     <div>
                         <Section />
-                        <Section />
-                        <Section />
+                        {/*<Section />
+                        <Section />*/}
                     </div>
                     <div>
                         <Lists />

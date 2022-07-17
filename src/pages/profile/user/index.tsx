@@ -51,7 +51,7 @@ const User:React.FC = () => {
             <div className={styles.name}>
                 {user.name}
             </div>
-            <Description id = {user.id}/>
+            <Description text = {user.description}/>
             <div className={styles.data}>
                 На проекте с 20 мая 2022 
             </div>

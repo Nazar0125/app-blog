@@ -30,21 +30,6 @@ const Description:React.FC = () => {
         }
     });
     
-    const getData = async () => {
-        try {
-            let obj = await descriptionApi.getDescription(user.id)
-            if (obj.statusCode === 200) {
-                setDescription(obj)
-            }
-        } catch (e) {
-            console.log(e)
-        }
-    }
-
-    React.useEffect(() => {
-        getData()
-    }, [])
-    
     const onSubmit = async (data:any, e:any) => {
         e.preventDefault();
         setLoading(true)
@@ -75,7 +60,7 @@ const Description:React.FC = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <textarea 
                         className={styles.textarea}                
-                        defaultValue = {description && description.content.text}
+                        defaultValue = {user && user.description}
                         {...(register && register('text', { required: true, max: 280 }))}> 
                     </textarea>
                     {errors && errors.text && <MyError text='Поля обязательные для заполнения'/>}

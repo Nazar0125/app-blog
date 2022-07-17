@@ -4,28 +4,13 @@ import { descriptionApi } from '../../../../api/descriptionApi';
 import styles from './Description.module.scss';
 
 interface typeProps {
-    id: number
+    text: string
 }
 
-const Description:React.FC<typeProps> = ({id}) => {
-    let [description, setDescription] = React.useState();
-    
-    const getData = async () => {
-        try {
-            let obj = await descriptionApi.getDescription(id)
-            setDescription(obj.content.text)
-        } catch (e) {
-            console.log(e)
-        }
-    }
-
-    React.useEffect(() => {
-        getData()
-    }, [])
-
+const Description:React.FC<typeProps> = ({text}) => {
     return (
         <div className={styles.description}>
-            <p className={styles.text}>{description}</p>
+            <p className={styles.text}>{text}</p>
             <Link to ="/settings/profile" className={styles.change}>Изменить описание </Link>
         </div>        
     );

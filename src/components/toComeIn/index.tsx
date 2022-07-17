@@ -40,7 +40,7 @@ const ToComeIn:React.FC = () => {
                     </>
                     :
                     <>
-                        <Registration />
+                        <Registration registrationChenge = {registrationChenge}/>
                         <div className= {styles.registrationLink}>
                             <span onClick={registrationChenge}>Войти</span>
                         </div>

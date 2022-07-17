@@ -12,6 +12,7 @@ const UserPg:React.FC = () => {
     const getData = async (userId:any) => {
         let obj = await usersApi.getUserBy(userId)
         setData(obj.content)
+        console.log(obj.content)
     }
 
     React.useEffect(() => {

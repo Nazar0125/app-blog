@@ -13,6 +13,10 @@ interface typeProps {
 }
 
 const Section:React.FC<typeProps> = ({id, title, photo, comments, user}) => {
+    if (!user) {
+        return null;
+    }
+    
     return (
         <div className={styles.section}>
             <div className={styles.header}>
